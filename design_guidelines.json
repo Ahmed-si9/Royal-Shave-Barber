@@ -1,0 +1,129 @@
+{
+  "theme": "dark",
+  "archetype": "ARCHETYPE 5: LUXURY (Premium, Depth, Mystery)",
+  "typography": {
+    "headings": {
+      "family": "Cormorant Garamond, serif",
+      "weights": ["300", "400", "600"],
+      "styling": "tracking-tight, elegant serif display"
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["300", "400", "500"],
+      "styling": "clean sans, geometric, loose leading (leading-relaxed)"
+    },
+    "rules": [
+      "No Inter for headings. Use Cormorant Garamond.",
+      "Headings must have tracking-tight or tracking-tighter.",
+      "Numbering chapters (01, 02) should be wide spaced (tracking-[0.2em]) and tiny."
+    ]
+  },
+  "colors": {
+    "background": {
+      "primary": "#0D0D0D",
+      "panels": "#1A1A1A"
+    },
+    "accents": {
+      "gold": "#D4AF37",
+      "goldHover": "#B5952F"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A1A1AA"
+    },
+    "borders": {
+      "goldHairline": "rgba(212, 175, 55, 0.3)",
+      "darkHairline": "rgba(255, 255, 255, 0.1)"
+    }
+  },
+  "visual_enhancers": {
+    "surfaces": [
+      "Thin gold hairline borders for cards and gallery items.",
+      "No generic 8px or 16px border radiuses. Use sharp 0px corners or extremely subtle 2px for precision.",
+      "Matte finishes. Avoid heavy drop shadows. Use 1px inner borders for depth."
+    ],
+    "hero_overlay": "bg-black/40 for perfect contrast. Do not use opaque backgrounds that kill the image.",
+    "marquee": "Slow gold marquee strip with text-sm or text-base tracking-widest uppercase."
+  },
+  "layouts": {
+    "spacing": "Generous asymmetry. Use p-12 to p-24 minimum. Elements should breathe.",
+    "grid": "Bento Grid Protocol Mode A (Asymmetric grids for gallery).",
+    "structure": [
+      "Header: Dark nav bar, glassmorphism backdrop-blur-xl bg-black/60. Sticky z-50. Navigation must be visible on desktop.",
+      "Hero: Full viewport. High-res bg, kinetic line-by-line masked text reveal. Status badge 'Currently OPEN'.",
+      "Services: Dark charcoal (#1A1A1A) panels, thin gold borders. Minimum 4 cards. Use flex/grid layout with ample internal padding (p-8).",
+      "Gallery: 4-item grid, asymmetric sizes if possible, thin gold frames. Spotlighted photography.",
+      "Reviews: Rating badge first, then cards with reviewer details.",
+      "Visit (Booking & Hours): 2-column layout (grid-cols-1 lg:grid-cols-2). Map on left, interactive dark mode styling. Hours and booking form right.",
+      "Footer: Deep black #0D0D0D, massive py-24 spacing. Center crown/wing icon."
+    ]
+  },
+  "motion": {
+    "libraries": [
+      "framer-motion",
+      "lenis (for smooth scrolling)",
+      "lucide-react (icons)",
+      "react-fast-marquee"
+    ],
+    "specs": {
+      "hero_reveal": "Staggered line-by-line reveal using overflow-hidden wrapper and y: 100% to 0%. Easing: [0.76, 0, 0.24, 1] (Custom cubic-bezier), duration: 1.2s.",
+      "scroll_reveals": "Sections fade up (y: 40, opacity: 0 to 1) with view triggered framer-motion 'whileInView'. Viewport margin: '-100px'.",
+      "micro_interactions": "Hover states on panels scale up slightly (scale: 1.02) and borders illuminate to solid gold (#D4AF37)."
+    }
+  },
+  "accessibility": {
+    "rules": [
+      "All interactive elements MUST have data-testid attributes.",
+      "Ensure minimum 4.5:1 contrast ratio. Text over images must have text-shadow or gradient scrims.",
+      "Visible focus states: ring-1 ring-[#D4AF37] ring-offset-2 ring-offset-[#0D0D0D]."
+    ]
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.pexels.com/photos/18483780/pexels-photo-18483780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "A classic barber chair inside a stylish dark salon."
+    },
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1629189784191-9afdcbcb0398?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwyfHxtZW4lMjBtb2Rlcm4lMjBoYWlyY3V0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg3NzQwMDYxfDA&ixlib=rb-4.1.0&q=85",
+        "title": "Skin Fade"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1599834562135-b6fc90e642ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwzfHxtZW4lMjBtb2Rlcm4lMjBoYWlyY3V0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg3NzQwMDYxfDA&ixlib=rb-4.1.0&q=85",
+        "title": "Textured Crop"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1562004760-aceed7bb0fe3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHw0fHxtZW4lMjBtb2Rlcm4lMjBoYWlyY3V0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg3NzQwMDYxfDA&ixlib=rb-4.1.0&q=85",
+        "title": "Modern Taper"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1630827020718-3433092696e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNTl8MHwxfHNlYXJjaHwxfHxtZW4lMjBtb2Rlcm4lMjBoYWlyY3V0JTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg3NzQwMDYxfDA&ixlib=rb-4.1.0&q=85",
+        "title": "Beard Trim"
+      }
+    ],
+    "reviewers": [
+      {
+        "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjBwb3J0cmFpdCUyMHN0dWRpbyUyMGZhY2V8ZW58MHx8fHwxNzg3NzQwMDYxfDA&ixlib=rb-4.1.0&q=85",
+        "name": "Prajeet Kumar"
+      },
+      {
+        "url": "https://images.pexels.com/photos/30975995/pexels-photo-30975995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "name": "Waddah Al masri"
+      }
+    ]
+  },
+  "universal_guidelines_for_main_agent": [
+    "You MUST NOT apply universal transition. Eg: transition: all.",
+    "Do NOT center align the app container. No .App { text-align: center; }",
+    "NEVER use AI assistant Emoji characters.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Prioritize using pre-existing components from src/components/ui.",
+    "MUST use Shadcn components for interactive logic (Forms, Modals, Inputs) but heavily customize them with pure Tailwind CSS to remove the default Vercel-look.",
+    "Ensure all interactive and key informational elements include data-testid attributes."
+  ],
+  "components": {
+    "required_shadcn": ["form", "input", "textarea", "button"],
+    "required_custom": ["marquee (using react-fast-marquee)", "framer-motion"]
+  }
+}
